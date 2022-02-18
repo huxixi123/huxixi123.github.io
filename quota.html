@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>数据可视化demo</title>
+		<link href="./styles/common.css" rel="stylesheet">
+		<script src="./scripts/Plugin/jquery-3.3.1.min.js"></script>
+		<script src="./scripts/Plugin/echarts.min.js"></script>
+		<script src="./scripts/Plugin/bmap.min.js"></script>
+		<script src="http://api.map.baidu.com/api?v=3.0&ak=VZpRTV6CTRf1nSNU3L4qUlDrSXOKRvD9"></script>
+		<script src="./scripts/common.js"></script>
+		<script src="./scripts/quota.js"></script>
+	</head>
+	<body>
+		<!--顶部-->
+		<header class="header left">
+			<div class="left nav">
+				<ul>
+					<li><i class="nav_1"></i><a href="index.html">网络概况</a> </li>
+					<li><i class="nav_2"></i><a href="quota.html">指标分析</a> </li>
+				</ul>
+			</div>
+			<div class="header_center left" style="position:relative">
+				<h2><strong>高校校园网络可视化</strong></h2>
+			</div>
+		</header>
+		<!--内容部分-->
+		<div class="con left">
+			<!--数据总概-->
+			<div class="con_div">
+				<div class="con_div_text left">
+					<div class="con_div_text01 left">
+						<img src="./images/info_1.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>总数据量(T)</p>
+							<p>1235</p>
+						</div>
+					</div>
+					<div class="con_div_text01 right">
+						<img src="./images/info_2.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>当月数据量(G)</p>
+							<p>235</p>
+						</div>
+					</div>
+				</div>
+				<div class="con_div_text left">
+					<div class="con_div_text01 left">
+						<img src="./images/info_3.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>无线当月使用数(人)</p>
+							<p class="sky">56266</p>
+						</div>
+					</div>
+					<div class="con_div_text01 right">
+						<img src="./images/info_4.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>无线当月使用数(人)</p>
+							<p class="sky">16341</p>
+						</div>
+					</div>
+				</div>
+				<div class="con_div_text left">
+					<div class="con_div_text01 left">
+						<img src="./images/info_5.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>有线总使用数(人)</p>
+							<p class="org">14276</p>
+						</div>
+					</div>
+					<div class="con_div_text01 right">
+						<img src="./images/info_6.png" class="left text01_img" />
+						<div class="left text01_div">
+							<p>有线当月使用数(人)</p>
+							<p class="org">156</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--统计分析图-->
+			<div class="div_any">
+				<div class="left div_any01">
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_5.png">各区数据量(月)</div>
+						<p id="histogramChart1" class="p_chart"></p>
+					</div>
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_6.png">各区使用人次(月)</div>
+						<p id="histogramChart2" class="p_chart"></p>
+					</div>
+				</div>
+				<div class="left div_any01">
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_7.png">各区数据量(周)</div>
+						<p id="lineChart1" class="p_chart"></p>
+					</div>
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_8.png">各区使用人次(周)</div>
+						<p id="lineChart2" class="p_chart"></p>
+					</div>
+				</div>
+				<div class="left div_any01">
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_9.png">流量/近三个月</div>
+						<p id="histogramChart3" class="p_chart"></p>
+					</div>
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_10.png">流量/近一个小时</div>
+						<p id="histogramChart4" class="p_chart"></p>
+					</div>
+				</div>
+				<div class="left div_any01">
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_11.png">接入师生比</div>
+						<p id="pieChart1" class="p_chart"></p>
+					</div>
+					<div class="div_any_child">
+						<div class="div_any_title"><img src="./images/title_12.png">接入学生年级占比</div>
+						<p id="pieChart2" class="p_chart"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
